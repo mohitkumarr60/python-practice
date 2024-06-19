@@ -53,4 +53,7 @@ class Solution(object):
             elif i==']':
                 squareBracket -=1
             
+            if paranthesis<0 and curlyBraces<0 and squareBracket<0:
+                return False
+
         return paranthesis==0 and curlyBraces==0 and squareBracket == 0
